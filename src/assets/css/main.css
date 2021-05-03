@@ -5,6 +5,53 @@ Fonts
 */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
 
+@font-face {
+  font-family: 'Cereal Book';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Airbnb Cereal App Book'), url('../fonts/AirbnbCerealBook.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Cereal Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Airbnb Cereal App Light'), url('../fonts/AirbnbCerealLight.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Cereal Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Airbnb Cereal App Medium'), url('../fonts/AirbnbCerealMedium.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Cereal Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Airbnb Cereal App Bold'), url('../fonts/AirbnbCerealBold.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Cereal Extra Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Airbnb Cereal App Extra Bold'), url('../fonts/AirbnbCerealExtraBold.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Cereal Black';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Airbnb Cereal App Black'), url('../fonts/AirbnbCerealMedium.woff') format('woff');
+  }
+
 /*
 =============== 
 Variables
@@ -12,6 +59,8 @@ Variables
 */
 
 :root {
+  /*hero custom*/
+  --clr-dark-1 : #060c25;
   /* dark shades of primary color*/
   --clr-primary-1: hsl(184, 91%, 17%);
   --clr-primary-2: hsl(185, 84%, 25%);
@@ -37,8 +86,8 @@ Variables
   --clr-red-dark: hsl(360, 67%, 44%);
   --clr-red-light: hsl(360, 71%, 66%);
   --clr-white: #fff;
-  --ff-primary: "Roboto", sans-serif;
-  --ff-secondary: "Open Sans", sans-serif;
+  --ff-primary: "Cereal Extra Bold", sans-serif;
+  --ff-secondary: "Cereal Medium", sans-serif;
   --transition: all 0.3s linear;
   --spacing: 0.2rem;
   --radius: 0.25rem;
@@ -411,7 +460,7 @@ Hero
   margin-top: -5rem;
   padding-top: 5rem;
   height: 100vh;
-  background: var(--clr-primary-10);
+  background: var(--clr-primary-10); 
   position: relative;
 }
 
